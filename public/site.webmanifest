@@ -1,0 +1,17 @@
+{
+  "name": "Dreevn",
+  "short_name": "Dreevn",
+  "description": "Premium digital agency specializing in branding, web development, and AI-powered growth systems.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0A0A0A",
+  "theme_color": "#B88A2E",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
