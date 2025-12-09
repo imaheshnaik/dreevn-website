@@ -2,6 +2,11 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Target, Zap, Shield, Users, Rocket, TrendingUp } from 'lucide-react';
 import { Reveal, StaggerContainer, StaggerItem } from '@/components/ui/animations';
 import founderImage from '@/assets/founder-circle.png';
+import aishaImg from '@/assets/team/aisha.png';
+import rohanImg from '@/assets/team/rohan.png';
+import hariImg from '@/assets/team/hari.png';
+import sameerImg from '@/assets/team/sameer.png';
+
 
 const timeline = [
   { year: '2024', title: 'Founded', desc: 'Branding & web projects across startups and local businesses.' },
@@ -21,10 +26,10 @@ const principles = [
 
 const leadership = [
   { name: 'Mahesh Banoth', role: 'Founder & CEO', image: founderImage },
-  { name: 'Aisha Rao', role: 'Head of Design', image: null },
-  { name: 'Rohan Mehta', role: 'Head of Engineering / AI Lead', image: null },
-  { name: 'Hari Priya ', role: 'Director of Growth', image: null },
-  { name: 'Sameer K.', role: 'Head of Production', image: null },
+  { name: 'Aisha Rao', role: 'Head of Design', image: aishaImg },
+  { name: 'Rohan Mehta', role: 'Head of Engineering / AI Lead', image: rohanImg },
+  { name: 'Hari Priya ', role: 'Director of Growth', image: hariImg },
+  { name: 'Sameer K.', role: 'Head of Production', image: sameerImg },
 ];
 
 const differentiators = [
@@ -180,26 +185,35 @@ const About = () => {
 
       {/* Founder Message */}
       <section className="section-padding bg-card">
-        <div className="section-container">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <Reveal>
-              <div className="relative mx-auto lg:mx-0">
-                <div className="w-64 h-64 rounded-full overflow-hidden border-4 border-gold/30">
-                  <img src={founderImage} alt="Mahesh Banoth, Founder" className="w-full h-full object-cover" />
-                </div>
-              </div>
-            </Reveal>
-            <Reveal delay={0.2}>
-              <h3 className="font-display text-2xl font-bold mb-4">A message from our Founder</h3>
-              <blockquote className="text-lg italic text-muted-foreground mb-4">
-                "I built Dreevn to bridge strategy, design, engineering, and now — intelligence. Great brands are built through clarity. Great products through precision. And great growth through systems that learn. Our mission is to deliver all three, consistently and measurably."
-              </blockquote>
-              <p className="font-semibold text-gold">— Mahesh Banoth, Founder & CEO</p>
-              <p className="text-sm text-muted-foreground">Dreevn Digital Studio</p>
-            </Reveal>
+  <div className="section-container">
+    <div className="mx-auto max-w-5xl lg:max-w-6xl grid lg:grid-cols-[auto,minmax(0,1.4fr)] gap-8 lg:gap-10 items-center">
+      <Reveal>
+        <div className="relative mx-auto lg:mx-0">
+          <div className="w-56 h-56 md:w-60 md:h-60 lg:w-64 lg:h-64 rounded-full overflow-hidden border-4 border-gold/30">
+            <img
+              src={founderImage}
+              alt="Mahesh Banoth, Founder"
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
-      </section>
+      </Reveal>
+      <Reveal delay={0.2}>
+        <h3 className="font-display text-2xl font-bold mb-4">
+          A message from our Founder
+        </h3>
+        <blockquote className="text-lg italic text-muted-foreground mb-4">
+          "I built Dreevn to bridge strategy, design, engineering, and now — intelligence. Great
+          brands are built through clarity. Great products through precision. And great growth
+          through systems that learn. Our mission is to deliver all three, consistently and
+          measurably."
+        </blockquote>
+        <p className="font-semibold text-gold">— Mahesh Banoth, Founder & CEO</p>
+        <p className="text-sm text-muted-foreground">Dreevn Digital Studio</p>
+      </Reveal>
+    </div>
+  </div>
+</section>
 
       {/* Leadership */}
       <section id="team" className="section-padding">

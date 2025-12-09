@@ -63,7 +63,7 @@ export const Navbar = () => {
               <img 
                 src={logoWhite} 
                 alt="Dreevn" 
-                className="h-8 md:h-10 w-auto"
+                className="h-22 md:h-24 w-auto"
               />
             </Link>
 

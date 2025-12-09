@@ -2,41 +2,45 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Bot, Globe, Palette, Code, TrendingUp, BarChart3, Linkedin, Instagram, Twitter } from 'lucide-react';
 import { Reveal, StaggerContainer, StaggerItem } from '@/components/ui/animations';
 import founderImage from '@/assets/founder-circle.png';
+import aishaImg from '@/assets/team/aisha.png';
+import rohanImg from '@/assets/team/rohan.png';
+import hariImg from '@/assets/team/hari.png';
+import sameerImg from '@/assets/team/sameer.png';
+
 
 const leadership = [
   { 
     name: 'Mahesh Banoth', 
     role: 'Founder & CEO', 
     desc: 'Product vision, strategy & quality. Leads Dreevn with focus on premium execution.',
-    image: founderImage ,
+    image: founderImage,
     linkedin: 'https://www.linkedin.com/in/maheshdreevn/',
     instagram: 'https://www.instagram.com/maheshdreevn?igsh=cmsybHU1OWoxbm1x&utm_source=qr',
     x: 'https://x.com/maheshdreevn?s=21',
-    
   },
   { 
     name: 'Aisha Rao', 
     role: 'Head of Design', 
     desc: 'Brand systems, UI/UX, identity & visual communication.',
-    image: null 
+    image: aishaImg,
   },
   { 
     name: 'Rohan Mehta', 
     role: 'Head of AI & Engineering', 
     desc: 'AI agents, workflows, Next.js & infrastructure.',
-    image: null 
+    image: rohanImg,
   },
   { 
     name: 'Hari Priya', 
     role: 'Director of Growth', 
     desc: 'Performance marketing, funnels & analytics.',
-    image: null 
+    image: hariImg,
   },
   { 
     name: 'Sameer K.', 
     role: 'Head of Production', 
     desc: 'Creative, motion, asset execution & delivery.',
-    image: null 
+    image: sameerImg,
   },
 ];
 

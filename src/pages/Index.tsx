@@ -179,20 +179,20 @@ const Index = () => {
 
             {/* Hero Logo Animation */}
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1.2, delay: 0.5, ease: [0.4, 0, 0.2, 1] }}
-              className="hidden lg:flex justify-center items-center"
-            >
-              <div className="relative">
-                <div className="absolute inset-0 bg-gold/10 blur-[80px] rounded-full scale-125 opacity-50" />
-                <img 
-                  src={logoGold} 
-                  alt="Dreevn logo gold" 
-                  className="w-80 h-80 object-contain relative z-10"
-                />
-              </div>
-            </motion.div>
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1.2, delay: 0.5, ease: [0.4, 0, 0.2, 1] }}
+  className="hidden lg:flex justify-center items-center lg:-mt-10"
+>
+  <div className="relative">
+    <div className="absolute inset-0 bg-gold/10 blur-[80px] rounded-full scale-125 opacity-50" />
+    <img 
+      src={logoGold} 
+      alt="Dreevn logo gold" 
+      className="w-80 h-80 lg:w-88 lg:h-88  object-contain relative z-10"
+    />
+  </div>
+</motion.div>
           </div>
         </div>
 
@@ -455,28 +455,34 @@ const Index = () => {
 
       {/* Founder Message */}
       <section className="section-padding">
-        <div className="section-container">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <Reveal>
-              <div className="relative mx-auto lg:mx-0">
-                <div className="w-64 h-64 rounded-full overflow-hidden border-4 border-gold/30">
-                  <img src={founderImage} alt="Mahesh Banoth, Founder" className="w-full h-full object-cover" />
-                </div>
-              </div>
-            </Reveal>
-            <Reveal delay={0.2}>
-              <span className="text-gold font-medium mb-4 block">From the Founder</span>
-              <h3 className="font-display text-2xl md:text-3xl font-bold mb-4">
-                Built for founders who expect premium execution.
-              </h3>
-              <blockquote className="text-lg text-muted-foreground mb-4">
-                "Dreevn was created for ambitious brands that expect clarity, speed and measurable outcomes — not agency fluff. We combine brand, product, and growth into one accountable team."
-              </blockquote>
-              <p className="font-semibold text-gold">— Mahesh Banoth, Founder & CEO</p>
-            </Reveal>
+  <div className="section-container">
+    <div className="mx-auto max-w-5xl lg:max-w-6xl grid lg:grid-cols-[auto,minmax(0,1.3fr)] gap-8 lg:gap-10 items-center">
+      <Reveal>
+        <div className="relative mx-auto lg:mx-0">
+          <div className="w-56 h-56 md:w-60 md:h-60 lg:w-64 lg:h-64 rounded-full overflow-hidden border-4 border-gold/30">
+            <img
+              src={founderImage}
+              alt="Mahesh Banoth, Founder"
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
-      </section>
+      </Reveal>
+      <Reveal delay={0.2}>
+        <span className="text-gold font-medium mb-4 block">From the Founder</span>
+        <h3 className="font-display text-2xl md:text-3xl font-bold mb-4">
+          Built for founders who expect premium execution.
+        </h3>
+        <blockquote className="text-lg text-muted-foreground mb-4">
+          "Dreevn was created for ambitious brands that expect clarity, speed and measurable
+          outcomes — not agency fluff. We combine brand, product, and growth into one
+          accountable team."
+        </blockquote>
+        <p className="font-semibold text-gold">— Mahesh Banoth, Founder & CEO</p>
+      </Reveal>
+    </div>
+  </div>
+</section>
 
       {/* FAQ */}
       <section className="section-padding bg-card">
