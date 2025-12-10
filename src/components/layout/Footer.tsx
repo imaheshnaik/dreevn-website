@@ -20,10 +20,12 @@ const footerLinks = {
     { name: 'Case Studies', path: '/portfolio' },
     { name: 'Insights', path: '/insights' },
   ],
-  legal: [
-    { name: 'Privacy Policy', path: '/privacy' },
-    { name: 'Terms of Service', path: '/terms' },
-  ],
+ legal: [
+  { name: 'Privacy Policy', path: '/privacy-policy' },
+  { name: 'Terms & Conditions', path: '/terms' },
+  { name: 'Refund Policy', path: '/refund-policy' },
+],
+
 };
 
 const socialLinks = [

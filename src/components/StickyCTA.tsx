@@ -29,7 +29,7 @@ export const StickyCTA = () => {
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: 100, opacity: 0 }}
           transition={{ type: 'spring', damping: 25, stiffness: 300 }}
-          className="fixed bottom-6 right-6 z-50 flex gap-3"
+          className="fixed bottom-24 right-6 z-50 flex gap-3"
         >
           {/* WhatsApp Quick Link */}
           <a
