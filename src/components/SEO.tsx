@@ -8,7 +8,7 @@ type SEOProps = {
 };
 
 export const SEO = ({ title, description, url, image }: SEOProps) => {
-  const fullTitle = title ? `${title} | Dreevn` : "Dreevn — Luxury Digital Agency";
+  const fullTitle = title ? `${title} | Dreevn` : "Dreevn — Luxury Digital Company";
 
   return (
     <Helmet>

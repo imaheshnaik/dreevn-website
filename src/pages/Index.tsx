@@ -95,7 +95,7 @@ const whyChooseUs = [
 ];
 
 const faqs = [
-  { q: 'What makes Dreevn different from other agencies?', a: 'We combine brand, product, and growth into one unified team — eliminating the multi-agency approach and delivering measurable outcomes.' },
+  { q: 'What makes Dreevn different from other agencies?', a: 'We combine brand, product, and growth into one unified team — eliminating the multi-Company approach and delivering measurable outcomes.' },
   { q: 'How long does a typical project take?', a: 'Brand systems: 4-6 weeks. Websites: 4-8 weeks. AI agents: 2-6 weeks. Growth sprints: 90 days.' },
   { q: 'Do you work with startups or only enterprises?', a: 'We work with ambitious companies of all sizes — from funded startups to established enterprises.' },
   { q: 'Can you integrate AI into our existing systems?', a: 'Yes, we build custom AI agents and automations that integrate with your CRM, WhatsApp, and existing workflows.' },
@@ -120,7 +120,7 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <SEOHead
-           title="Dreevn — Luxury Digital Agency | Branding · Web · Growth"
+           title="Dreevn — Luxury Digital Company | Branding · Web · Growth"
   description="Dreevn builds premium brand systems, high-performance websites and AI-powered growth engines for ambitious companies."
   path="/"                      // homepage path
   image="/og/home.jpg"          // file you put in /public/og/home.jpg
@@ -476,7 +476,7 @@ const Index = () => {
         </h3>
         <blockquote className="text-lg text-muted-foreground mb-4">
           "Dreevn was created for ambitious brands that expect clarity, speed and measurable
-          outcomes — not agency fluff. We combine brand, product, and growth into one
+          outcomes — not Company fluff. We combine brand, product, and growth into one
           accountable team."
         </blockquote>
         <p className="font-semibold text-gold">— Mahesh Banoth, Founder & CEO</p>

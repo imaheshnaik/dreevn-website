@@ -158,7 +158,7 @@ const Team = () => {
           </h3>
 
           <blockquote className="text-lg md:text-xl italic text-muted-foreground mb-4">
-            "Dreevn was built for ambitious brands that expect clarity, speed and measurable outcomes — not agency fluff."
+            "Dreevn was built for ambitious brands that expect clarity, speed and measurable outcomes — not Company fluff."
           </blockquote>
 
           <p className="font-semibold text-gold mb-3">

@@ -112,7 +112,7 @@ const About = () => {
                 Brands of all sizes deserve premium design, powerful technology, and growth systems that actually move numbers — not just pretty screens.
               </p>
               <p className="text-muted-foreground text-lg">
-                We blend branding, product design, engineering, performance marketing, and AI automation into one unified offering. This eliminates the messy multi-agency approach and gives clients a single, accountable partner for strategy, delivery, and growth.
+                We blend branding, product design, engineering, performance marketing, and AI automation into one unified offering. This eliminates the messy multi-Company approach and gives clients a single, accountable partner for strategy, delivery, and growth.
               </p>
             </div>
           </Reveal>
