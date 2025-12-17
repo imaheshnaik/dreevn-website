@@ -1,6 +1,18 @@
 import { Navbar } from "./Navbar";
 import { Footer } from "./Footer";
 import { GlobalSchema } from "@/components/GlobalSchema";
+import { SEO } from '@/components/SEO';  // your generic SEO component using react-helmet-async
+
+// inside Layout JSX, as the very first child
+<SEO
+  title="Dreevn — Luxury Digital Agency"
+  description="Dreevn builds premium brands, high-performing websites and AI-powered growth systems for ambitious companies."
+  url="https://dreevn.com"
+  image="/og/default.jpg"   // <- global fallback (you created this)
+  />
+
+
+
 
 interface LayoutProps {
   children: React.ReactNode;

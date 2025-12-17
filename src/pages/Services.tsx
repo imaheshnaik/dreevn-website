@@ -151,9 +151,10 @@ const Services = () => {
   return (
     <div className="min-h-screen pt-20">
       <SEOHead
-        title="Services — Brand, Web, Growth & AI | Dreevn"
-        description="End-to-end digital services: brand identity, high-performance websites, growth marketing, and AI automation. Request a custom proposal."
-        path="/services"
+       title="Services — Dreevn | Branding, Web, Growth & AI"
+  description="Full-stack brand, website and AI services for founders and growth teams."
+  path="/services"
+  image="/og/services.jpg"
       />
 
       {/* Hero */}

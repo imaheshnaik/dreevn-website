@@ -6,6 +6,7 @@ import aishaImg from '@/assets/team/aisha.png';
 import rohanImg from '@/assets/team/rohan.png';
 import hariImg from '@/assets/team/hari.png';
 import sameerImg from '@/assets/team/sameer.png';
+import { SEOHead } from '@/components/SEOHead';
 
 
 const timeline = [
@@ -53,6 +54,15 @@ const techLogos = ['Next.js', 'Figma', 'AWS', 'Shopify', 'Google', 'WhatsApp API
 const About = () => {
   return (
     <div className="min-h-screen pt-20">
+
+
+<SEOHead
+  title="About — Dreevn"
+  description="Our philosophy, mission and journey as a premium digital studio."
+  path="/about"
+  image="/og/about.jpg"
+/>
+
       {/* Hero */}
       <section className="relative overflow-hidden py-24 lg:py-32">
         <div className="absolute inset-0 grid-pattern opacity-40" />

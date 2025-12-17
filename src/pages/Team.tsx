@@ -6,6 +6,7 @@ import aishaImg from '@/assets/team/aisha.png';
 import rohanImg from '@/assets/team/rohan.png';
 import hariImg from '@/assets/team/hari.png';
 import sameerImg from '@/assets/team/sameer.png';
+import { SEOHead } from '@/components/SEOHead';
 
 
 const leadership = [
@@ -94,6 +95,14 @@ const awards = [
 const Team = () => {
   return (
     <div className="min-h-screen pt-20">
+
+<SEOHead
+ title="Team — Dreevn"
+  description="Meet the designers, engineers and AI specialists behind Dreevn."
+  path="/team"
+  image="/og/team.jpg"
+/>
+
       {/* Hero */}
       <section className="relative overflow-hidden py-24 lg:py-32">
         <div className="absolute inset-0 grid-pattern opacity-40" />

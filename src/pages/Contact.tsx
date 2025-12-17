@@ -1,4 +1,5 @@
 import { SEO } from "@/components/SEO";
+import { SEOHead } from '@/components/SEOHead';
 import { useState } from 'react';
 import {
   ArrowRight,
@@ -184,6 +185,16 @@ const Contact = () => {
     />
 
     <div className="min-h-screen pt-20">
+
+
+
+<SEOHead
+  title="Contact — Dreevn"
+  description="Share your project brief — we’ll reply with a roadmap and budget within 48 hours."
+  path="/contact"
+  image="/og/contact.jpg"
+/>
+
 
       {/* Hero */}
       <section className="relative overflow-hidden py-24 lg:py-32">

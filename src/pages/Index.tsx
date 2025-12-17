@@ -120,9 +120,10 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <SEOHead
-        title="Dreevn — Luxury Digital Agency | Branding · Web · Growth"
-        description="Dreevn builds premium brands, high-converting websites and AI-powered growth systems for ambitious companies. Boutique experience, enterprise reliability."
-        path="/"
+           title="Dreevn — Luxury Digital Agency | Branding · Web · Growth"
+  description="Dreevn builds premium brand systems, high-performance websites and AI-powered growth engines for ambitious companies."
+  path="/"                      // homepage path
+  image="/og/home.jpg"          // file you put in /public/og/home.jpg
       />
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">

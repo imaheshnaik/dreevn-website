@@ -93,9 +93,10 @@ const AISuite = () => {
   return (
     <div className="min-h-screen pt-20">
       <SEOHead
-        title="AI Suite — Sales Agents, WhatsApp Automation & Growth AI | Dreevn"
-        description="Custom AI agents for sales, support, WhatsApp automation, and intelligent workflows. Enterprise-grade AI systems that work 24/7."
-        path="/ai"
+        title="AI Suite — Dreevn"
+  description="AI agents, WhatsApp automation and growth automation built to scale."
+  path="/ai"
+  image="/og/ai.jpg"
       />
 
       {/* Hero */}

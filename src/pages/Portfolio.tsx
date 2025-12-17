@@ -149,9 +149,11 @@ const Portfolio = () => {
   return (
     <div className="min-h-screen pt-20">
       <SEOHead
-        title="Portfolio — Case Studies & Results | Dreevn"
-        description="Explore our portfolio of successful brand, web, and growth projects. See measurable outcomes from our design, engineering, and marketing work."
-        path="/portfolio"
+          title="Portfolio — Dreevn"
+  description="Selected case studies and results — brand, web and AI projects."
+  path="/portfolio"
+  image="/og/portfolio.jpg"
+
       />
 
       {/* Hero */}
