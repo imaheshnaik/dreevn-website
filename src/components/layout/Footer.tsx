@@ -31,7 +31,7 @@ const footerLinks = {
 const socialLinks = [
   { name: 'X / Twitter', href: 'https://x.com/dreevnofficial' },
   { name: 'Instagram', href: 'https://instagram.com/dreevnofficial' },
-  { name: 'LinkedIn', href: 'https://linkedin.com/company/dreevn' },
+  { name: 'LinkedIn', href: 'https://linkedin.com/company/dreevn-official' },
 ];
 
 export const Footer = () => {

@@ -120,7 +120,7 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <SEOHead
-           title="Dreevn — Luxury Digital Company | Branding · Web · Growth"
+           title="Dreevn is a luxury digital company building premium brands, high-performance websites, and AI-powered business systems for ambitious companies."
   description="Dreevn builds premium brand systems, high-performance websites and AI-powered growth engines for ambitious companies."
   path="/"                      // homepage path
   image="/og/home.jpg"          // file you put in /public/og/home.jpg
