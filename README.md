@@ -1,6 +1,6 @@
 # Dreevn Website
 
-Marketing site for Dreevn — a premium studio for brand, web and AI systems.
+Marketing site for Dreevn — a premium global digital company delivering enterprise-grade brand, web and AI systems.
 
 - Frontend: React + Vite + TypeScript
 - Styling: Tailwind CSS
