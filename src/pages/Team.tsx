@@ -2,10 +2,10 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Bot, Globe, Palette, Code, TrendingUp, BarChart3, Linkedin, Instagram, Twitter } from 'lucide-react';
 import { Reveal, StaggerContainer, StaggerItem } from '@/components/ui/animations';
 import founderImage from '@/assets/founder-circle.png';
-import aishaImg from '@/assets/team/aaisha.png';
-import rohanImg from '@/assets/team/rrohan.png';
-import hariImg from '@/assets/team/haari.png';
-import sameerImg from '@/assets/team/ssameer.png';
+// import aishaImg from '@/assets/team/aisha.png';
+// import rohanImg from '@/assets/team/rohan.png';
+// import hariImg from '@/assets/team/hari.png';
+// import sameerImg from '@/assets/team/sameer.png';
 import { SEOHead } from '@/components/SEOHead';
 
 
@@ -23,25 +23,25 @@ const leadership = [
     name: 'Aisha Rao', 
     role: 'Head of Design', 
     desc: 'Brand systems, UI/UX, identity & visual communication.',
-    image: aishaImg,
+    //image: aishaImg,
   },
   { 
     name: 'Rohan Mehta', 
     role: 'Head of AI & Engineering', 
     desc: 'AI agents, workflows, Next.js & infrastructure.',
-    image: rohanImg,
+    //image: rohanImg,
   },
   { 
     name: 'Hari Priya', 
     role: 'Director of Growth', 
     desc: 'Performance marketing, funnels & analytics.',
-    image: hariImg,
+    //image: hariImg,
   },
   { 
     name: 'Sameer K.', 
     role: 'Head of Production', 
     desc: 'Creative, motion, asset execution & delivery.',
-    image: sameerImg,
+    //image: sameerImg,
   },
 ];
 
@@ -123,6 +123,22 @@ const Team = () => {
               Enterprise reliability. Studio agility. AI-powered execution.
             </p>
           </Reveal>
+
+           <div className="mt-10 max-w-2xl border-l-2 border-gold/40 pl-6">
+  <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
+    DREEVN operates with distributed global teams across strategy, design,
+    engineering, AI, and growth.
+  </p>
+
+  <p className="text-sm md:text-base text-muted-foreground leading-relaxed mt-3">
+    Our organization brings together <span className="text-foreground font-medium">50+ professionals</span> working
+    across multiple time zones, following a scalable delivery model built for
+    enterprise execution and long-term partnerships.
+  </p>
+</div>
+
+
+
         </div>
       </section>
 
@@ -263,19 +279,21 @@ const Team = () => {
             isFounder ? 'border-gold/60' : ''
           }`}
         >
-          <div className="w-24 h-24 rounded-full bg-muted mx-auto mb-4 overflow-hidden border-2 border-gold/20">
-            {member.image ? (
-              <img
-                src={member.image}
-                alt={member.name}
-                className="w-full h-full object-cover"
-              />
-            ) : (
-              <div className="w-full h-full flex items-center justify-center text-2xl font-bold text-gold/40">
-                {member.name.charAt(0)}
-              </div>
-            )}
-          </div>
+          <div className="w-24 h-24 rounded-full bg-muted mx-auto mb-4 overflow-hidden border-2 border-gold/20 flex items-center justify-center">
+  {member.image ? (
+    <img
+      src={member.image}
+      alt={member.name}
+      className="w-full h-full object-cover"
+    />
+  ) : (
+    <span className="text-xl font-semibold text-gold/50">
+      {member.name.charAt(0)}
+    </span>
+  )}
+</div>
+
+
 
           <h3 className="font-semibold text-lg">{member.name}</h3>
 
