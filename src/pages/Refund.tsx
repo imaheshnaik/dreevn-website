@@ -61,7 +61,7 @@ const RefundPolicy = () => {
           <Reveal>
             <div className="card-premium p-6 md:p-8">
               <p className="text-muted-foreground text-sm md:text-base">
-                Dreevn is a service-based studio. Our time, strategy, design, engineering and AI work are 
+                Dreevn is a service-based global digital studio. Our time, strategy, design, engineering and AI work are 
                 custom-created for each client. This policy explains how refunds and cancellations are handled.
               </p>
             </div>

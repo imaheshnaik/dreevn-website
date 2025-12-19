@@ -166,7 +166,7 @@ const Index = () => {
 
               <Reveal delay={0.6}>
                 <p className="text-sm text-muted-foreground">
-                  Trusted by growth teams and founders — boutique experience, enterprise reliability.
+                  Trusted by growth teams worldwide — enterprise-grade execution with global delivery.
                 </p>
               </Reveal>
 

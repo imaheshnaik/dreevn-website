@@ -2,10 +2,10 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Target, Zap, Shield, Users, Rocket, TrendingUp } from 'lucide-react';
 import { Reveal, StaggerContainer, StaggerItem } from '@/components/ui/animations';
 import founderImage from '@/assets/founder-circle.png';
-import aishaImg from '@/assets/team/aisha.png';
-import rohanImg from '@/assets/team/rohan.png';
-import hariImg from '@/assets/team/hari.png';
-import sameerImg from '@/assets/team/sameer.png';
+import aishaImg from '@/assets/team/aaisha.png';
+import rohanImg from '@/assets/team/rrohan.png';
+import hariImg from '@/assets/team/haari.png';
+import sameerImg from '@/assets/team/ssameer.png';
 import { SEOHead } from '@/components/SEOHead';
 
 

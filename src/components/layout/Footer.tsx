@@ -95,7 +95,7 @@ export const Footer = () => {
               <img src={logoWhite} alt="Dreevn" className="h-10 mb-6" />
             </Link>
             <p className="text-muted-foreground mb-6 max-w-sm">
-              Premium digital studio specializing in brand identity, high-performance websites, and AI-powered growth systems for ambitious businesses.
+              Global digital company  specializing in brand identity, high-performance websites, and AI-powered growth systems for ambitious businesses.
             </p>
             <div className="space-y-3">
               <a 
