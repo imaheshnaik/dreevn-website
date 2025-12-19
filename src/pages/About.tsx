@@ -2,10 +2,10 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Target, Zap, Shield, Users, Rocket, TrendingUp } from 'lucide-react';
 import { Reveal, StaggerContainer, StaggerItem } from '@/components/ui/animations';
 import founderImage from '@/assets/founder-circle.png';
-import aishaImg from '@/assets/team/aaisha.png';
-import rohanImg from '@/assets/team/rrohan.png';
-import hariImg from '@/assets/team/haari.png';
-import sameerImg from '@/assets/team/ssameer.png';
+// import aishaImg from '@/assets/team/aisha.png';
+// import rohanImg from '@/assets/team/rohan.png';
+// import hariImg from '@/assets/team/hari.png';
+// import sameerImg from '@/assets/team/ssameer.png';
 import { SEOHead } from '@/components/SEOHead';
 
 
@@ -27,10 +27,10 @@ const principles = [
 
 const leadership = [
   { name: 'Mahesh Banoth', role: 'Founder & CEO', image: founderImage },
-  { name: 'Aisha Rao', role: 'Head of Design', image: aishaImg },
-  { name: 'Rohan Mehta', role: 'Head of Engineering / AI Lead', image: rohanImg },
-  { name: 'Hari Priya ', role: 'Director of Growth', image: hariImg },
-  { name: 'Sameer K.', role: 'Head of Production', image: sameerImg },
+  { name: 'Aisha Rao', role: 'Head of Design'},
+  { name: 'Rohan Mehta', role: 'Head of Engineering / AI Lead'},
+  { name: 'Hari Priya ', role: 'Director of Growth' },
+  { name: 'Sameer K.', role: 'Head of Production' },
 ];
 
 const differentiators = [
@@ -58,7 +58,7 @@ const About = () => {
 
 <SEOHead
   title="About — Dreevn"
-  description="Our philosophy, mission and journey as a premium digital studio."
+  description="Our philosophy, mission and journey as a premium global digital company."
   path="/about"
   image="/og/about.jpg"
 />
@@ -76,7 +76,7 @@ const About = () => {
           </Reveal>
           <Reveal delay={0.2}>
             <p className="text-xl text-muted-foreground max-w-2xl mb-8">
-              Dreevn is a global digital studio blending strategy, design, engineering, and AI automation to help ambitious companies grow with clarity, speed, and measurable outcomes.
+              Dreevn is a global digital company blending strategy, design, engineering, and AI automation to help ambitious companies grow with clarity, speed, and measurable outcomes.
             </p>
           </Reveal>
           <Reveal delay={0.4}>
