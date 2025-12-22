@@ -4,6 +4,9 @@ import { ArrowRight, ExternalLink, X } from 'lucide-react';
 import { Reveal, StaggerContainer, StaggerItem } from '@/components/ui/animations';
 import { motion, AnimatePresence } from 'framer-motion';
 import { SEOHead } from '@/components/SEOHead';
+import { SystemReliability } from '@/components/SystemReliability';
+
+
 
 // Portfolio images
 import pfKavya from '@/assets/pf_kavya.png';
@@ -15,6 +18,7 @@ import pfGreengrid from '@/assets/pf_greengrid.png';
 import pfPulse from '@/assets/pf_pulse.png';
 import pfMetrodrive from '@/assets/pf_metrodrive.png';
 import pfHarvest from '@/assets/pf_harvest.png';
+
 
 const portfolioItems = [
   {
@@ -149,11 +153,10 @@ const Portfolio = () => {
   return (
     <div className="min-h-screen pt-20">
       <SEOHead
-          title="Portfolio — Dreevn"
-  description="Selected case studies and results — brand, web and AI projects."
-  path="/portfolio"
-  image="/og/portfolio.jpg"
-
+        title="Portfolio — Dreevn"
+        description="Selected case studies and results — brand, web and AI projects."
+        path="/portfolio"
+        image="/og/portfolio.jpg"
       />
 
       {/* Hero */}
@@ -233,7 +236,7 @@ const Portfolio = () => {
       </section>
 
       {/* Portfolio Grid */}
-      <section className="section-padding">
+      <section className="py-12 lg:py-16 pb-8">
         <div className="section-container">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <AnimatePresence mode="popLayout">
@@ -248,7 +251,7 @@ const Portfolio = () => {
                   onClick={() => setSelectedProject(item)}
                   className="group cursor-pointer"
                 >
-                  <div className="relative h-80 rounded-2xl overflow-hidden bg-card border border-border transition-all duration-300 group-hover:border-gold group-hover:shadow-lg group-hover:shadow-gold/10">
+                  <div className="relative h-[280px] rounded-2xl overflow-hidden bg-card border border-border transition-all duration-500 group-hover:border-gold group-hover:scale-[1.02] group-hover:shadow-[0_20px_50px_-12px_hsla(42,64%,45%,0.25)]">
                     {/* Image */}
                     <img
                       src={item.image}
@@ -256,19 +259,27 @@ const Portfolio = () => {
                       className="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
                     />
                     
-                    {/* Gradient Overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-transparent" />
+                    {/* Cinematic Gradient Overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 via-40% to-transparent" />
+                    
+                    {/* Managed System Badge */}
+                    <div className="absolute top-4 right-4 z-10">
+                      <div className="px-3 py-1.5 rounded-full bg-background/60 backdrop-blur-md border border-gold/30 text-gold text-xs font-medium tracking-wide">
+                        Managed System
+                      </div>
+                    </div>
                     
                     {/* Content */}
                     <div className="absolute bottom-0 left-0 right-0 p-6">
                       <span className="text-sm text-gold mb-2 block">{item.category}</span>
-                      <h3 className="font-display text-xl font-semibold mb-2">{item.title}</h3>
-                      <p className="text-lg font-semibold text-gradient">{item.metric}</p>
+                      <h3 className="font-display text-xl font-semibold mb-1">{item.title}</h3>
+                      <p className="text-lg font-semibold text-gradient mb-1">{item.metric}</p>
+                      <p className="text-xs text-muted-foreground/70">Delivered & maintained by Dreevn</p>
                     </div>
                     
                     {/* Hover Icon */}
-                    <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
-                      <div className="w-10 h-10 rounded-full bg-gold/10 backdrop-blur-sm flex items-center justify-center">
+                    <div className="absolute top-4 left-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <div className="w-10 h-10 rounded-full bg-gold/10 backdrop-blur-sm flex items-center justify-center border border-gold/20">
                         <ExternalLink size={18} className="text-gold" />
                       </div>
                     </div>
@@ -279,6 +290,9 @@ const Portfolio = () => {
           </div>
         </div>
       </section>
+
+      {/* System Reliability & Ownership Section */}
+      <SystemReliability />
 
       {/* CTA */}
       <section className="section-padding bg-card border-t border-border">
