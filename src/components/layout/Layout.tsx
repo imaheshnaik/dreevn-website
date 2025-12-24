@@ -6,7 +6,7 @@ import { SEO } from '@/components/SEO';  // your generic SEO component using rea
 // inside Layout JSX, as the very first child
 <SEO
   title="Dreevn — Luxury Digital Company"
-  description="Dreevn builds premium brands, high-performing websites and AI-powered growth systems for ambitious companies."
+  description="Dreevn is a luxury digital company building premium brand systems, high-performance websites, and AI-powered growth engines for ambitious companies."
   url="https://dreevn.com"
   image="/og/default.jpg"   // <- global fallback (you created this)
   />
